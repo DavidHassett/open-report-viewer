@@ -7,6 +7,10 @@ on:
     types: [opened, closed, reopened, edited, deleted]
   workflow_dispatch: {}
 
+concurrency:
+  group: update-tracker
+  cancel-in-progress: false
+
 permissions:
   contents: write
   issues: read
@@ -37,4 +41,5 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add assets/tracker.png
           git diff --quiet --cached || git commit -m "Update open report tracker"
+          git pull --rebase origin main
           git push
