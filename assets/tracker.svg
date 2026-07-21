@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="66" viewBox="0 0 480 66" font-family="Segoe UI, Arial, sans-serif">
+<rect width="480" height="66" fill="#ffffff" stroke="#d0d7de" rx="6"/>
+<text x="14" y="22" font-size="14" font-weight="700" fill="#24292f">Open Reports (0)</text>
+<line x1="0" y1="34" x2="480" y2="34" stroke="#d0d7de"/>
+<text x="14" y="54" font-size="12" fill="#57606a">No open reports 🎉</text>
+</svg>
